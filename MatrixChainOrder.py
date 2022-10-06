@@ -15,8 +15,6 @@ def MatrixChainOrder(p):
         # Set the diagonal to zeroes
         m[i][i] = 0
 
-    # Similar to the second dimension in the 's' array.
-    # Not sure if there's a relation there or not yet.
     # "l is the chain length"
     for l in range(2, n + 1):
         for i in range(1, n - l + 2):
@@ -40,6 +38,7 @@ def PrintOptimalParens(s, i, j):
         )
 
 
-m, s = MatrixChainOrder([30, 35, 15, 5, 10, 20, 25])
+m, s = MatrixChainOrder([5, 10, 3, 12, 5, 6, 50])
 
 print(PrintOptimalParens(s, 1, 6))
+print(s)
