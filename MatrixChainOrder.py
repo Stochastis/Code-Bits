@@ -38,7 +38,7 @@ def PrintOptimalParens(s, i, j):
         )
 
 
-m, s = MatrixChainOrder([5, 10, 3, 12, 5, 6, 50])
+m, s = MatrixChainOrder([5, 10, 3, 12, 5, 50, 6])
 
 print(PrintOptimalParens(s, 1, 6))
 print(s)
